@@ -1,0 +1,44 @@
+.body-container {
+    padding: 20px;
+}
+
+.heading-container {
+    margin: 30px 0px 20px 0px;
+    width: 100%;
+}
+
+.add-btn {
+    color: white;
+    background-color: #74B980;
+}
+
+.custom-btn {
+    padding: 10px;
+    width: 80px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 30% auto;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-right: 10px;
+    font-size: 1.15rem;
+    word-wrap: break-word;
+}
+
+.name-heading, .phone-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #808080;
+    text-transform: uppercase;
+}
