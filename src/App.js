@@ -4,6 +4,10 @@ import Header from './Header';
 import './App.css';
 
 class App extends Component {
+  clickHandler(message) {
+    alert(message);
+  }
+
   render() {
     let subscribers = [
       {
@@ -20,7 +24,7 @@ class App extends Component {
 
     return (
       <div className="body-container">
-        <Header />
+        <Header heading="Phone Directory" />
         <button className="custom-btn add-btn">Add</button>
         <div className="grid-container heading-container">
           <span className="grid-item name-heading">Name</span>
@@ -32,11 +36,10 @@ class App extends Component {
             return <div className="grid-container" key={sub.id}>
               <span className="grid-item">{sub.name}</span>
               <span className="grid-item">{sub.phone}</span>
+              <button className="custom-btn delete-btn" onClick={this.clickHandler.bind(this,"Do you want to delete the contact?")} style={{ marginTop: 0 }}>Delete</button>
             </div>
           })
         }
-
-
       </div>
     );
   }

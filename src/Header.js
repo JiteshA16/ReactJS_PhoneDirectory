@@ -3,7 +3,7 @@ import React from 'react';
 import './Header.css';
 
 /* This is functional component */
-const Header = function () {
+const Header = function (props) {
     /* Moving style as constant object */
     //const headerStyle = { textAlign: 'center', padding: 20, background: '#000', color: '#fff', textTransform: 'uppercase' };
     
@@ -15,7 +15,7 @@ const Header = function () {
             */
 
         <div className="header">
-            Phone Directory
+            {props.heading}
         </div>
     )
 }
